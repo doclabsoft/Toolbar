@@ -1,0 +1,212 @@
+body {
+  margin: 0;
+  padding: 1em;
+}
+article {
+  height: 100px;
+}
+aside {
+  display: block;
+  margin-bottom: 1em;
+  clear: both;
+  overflow: hidden;
+}
+.settings {
+  width: 300px;
+  min-height: 400px;
+  height: auto;
+  padding: 1em;
+  float: left;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #ddd;
+  overflow: auto;
+  position: relative;
+}
+.settings h3 {
+  margin: 0;
+}
+
+
+.setting {
+  display: block;
+  margin: 0.5em 0;
+  padding: 0;
+}
+button.setting {
+  padding: 1px 6px;
+}
+.setting.DD-group .DD-group__caption {
+  display: block;
+}
+.setting.DD-group .DD-radiobutton {
+  display: block;
+}
+.setting.DD-noUiSlider {
+  padding-bottom: 3em;
+}
+.setting .DD-noUiSlider__caption {
+  display: block;
+  margin-bottom: 0.5em;
+}
+.setting .DD-noUiSlider__slider {
+  display: block;
+  margin: 0.25em 1em;
+}
+.setting.DD-dropdown__popup {
+  border: solid 3px #ddd;
+  border-top: none;
+}
+.setting.press-button {
+  background: #ddd;
+}
+.setting.press-button.active {
+  background: #f66;
+}
+.setting.add-control {
+  position: absolute;
+  bottom: 4em;
+  left: 1em;
+}
+.setting.add-group {
+  position: absolute;
+  bottom: 4em;
+  right: 1em;
+}
+.setting.types {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+}
+.setting.groups {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+.setting.reset {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+}
+
+
+.DD-toolbar-dropdown__button-more {
+  width: 30px;
+  height: 30px;
+  background: #99f;
+  border: solid 3px #66d;
+  margin-top: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.DD-toolbar-flat, .DD-toolbar-dropdown, .DD-toolbar-dropdown__popup {
+  border: solid 3px #666;
+  padding: 3px;
+  background: #ddf;
+  border-radius: 3px;
+}
+.DD-toolbar-flat, .DD-toolbar-dropdown {
+  position: relative;
+  z-index: 2;
+}
+.DD-toolbar-dropdown__popup {
+  position: absolute;
+  z-index: 3;
+  border-top: none;
+  padding-top: 0;
+}
+.DD-toolbar-dropdown-row {
+  padding-top: 3px;
+}
+
+.toolbar-item.DD-group-flat {
+  background: #666;
+  border-radius: 3px;
+}
+.toolbar-item.DD-group-expandable__control {
+  background: #666;
+}
+.toolbar-item.DD-group-expandable__content {
+  padding: 3px;
+  margin: 3px 0;
+  background: #666;
+  border-radius: 3px;
+}
+.toolbar-item.DD-control {
+  height: 36px;
+  border: solid 3px #666;
+  font: normal 12px/32px sans-serif;
+  border-radius: 3px;
+}
+.toolbar-item.DD-label {
+  line-height: 14px;
+}
+.toolbar-item.DD-group {
+  font: normal 12px/32px sans-serif;
+  padding: 0;
+  background: #666;
+}
+.toolbar-item.readonly {
+  opacity: 0.6;
+}
+.toolbar-item.disabled {
+  opacity: 0.3;
+}
+.toolbar-item.focused {
+  border: solid 3px red;
+}
+
+.toolbar-item.DD-button {
+  background: #6d6;
+}
+.toolbar-item.DD-checkbox {
+  background: #f99;
+}
+.toolbar-item.DD-radiobutton {
+  background: #fc8;
+}
+.toolbar-item.DD-dropdown {
+  background: #99f;
+}
+.toolbar-item.DD-label {
+  background: #ddd;
+}
+.toolbar-item.DD-textedit {
+  background: #ddd;
+}
+.toolbar-item.DD-spinner {
+  background: #ddd;
+}
+.toolbar-item.DD-noUiSlider {
+  background: #ddd;
+}
+
+.toolbar-item .DD-sprite-index-0 {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 0.25em;
+  background: red;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+
+.toolbar-item .DD-sprite-index-1 {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 0.25em;
+  background: blue;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+
+.toolbar-item .DD-sprite-index-2 {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 0.25em;
+  background: black;
+  border-radius: 3px;
+  vertical-align: middle;
+}

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang='ru'>
+<head>
+  <meta charset='utf-8'>
+  <script src='../../../../closure/closure/goog/base.js'></script>
+  <script src='../../../../closure/closure/goog/deps.js'></script>
+  <script src='../../../deps.js'></script>
+  <script src='renderer/jquery/jquery-2.1.4.min.js'></script>
+  <script src='renderer/jquery/nouislider/jquery.nouislider.all.js'></script>
+  <link rel='stylesheet' href='renderer/jquery/nouislider/jquery.nouislider.min.css'>
+  <link rel='stylesheet' href='renderer/jquery/nouislider/jquery.nouislider.pips.min.css'>
+  <link rel='stylesheet' href='../controls.css'>
+  <script>
+    goog.require('DD.ui.Slider');
+  </script>
+</head>
+<body>
+
+<style>
+.test-icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-color: red;
+  border: solid 1px black;
+}
+#slider {
+  margin: 1em;
+  width: 20em;
+  height: 20em;
+  outline: solid 1px red;
+}
+.DD-slider_noUiSlider {
+  overflow: visible;
+}
+.DD-slider_noUiSlider-h {
+  width: 100%;
+}
+.DD-slider_noUiSlider-slider.noUi-horizontal {
+  width: 100%;
+}
+</style>
+
+<div id='slider'></div>
+<script>
+var A = new DD.ui.Slider();
+A.setIncrement(10);
+A.setMinValue(30);
+A.setMaxValue(100);
+A.render(document.getElementById('slider'));
+
+</script>
+
+<hr>
+
+<div id='settings'>
+
+  <p>
+    <b>Ориентация</b><br>
+    <button onClick='A.setOrientation(1);'>Горизонтальный слайдер</button>
+    <button onClick='A.setOrientation(2);'>Вертикальный слайдер</button>
+  </p>
+
+  <p>
+    <b>Пределы</b><br>
+    <label>Минимум <input type='text' onChange='A.setMinValue(this.value); this.value = A.getMinValue();' /></label>
+    <label>Максимум <input type='text' onChange='A.setMaxValue(this.value); this.value = A.getMaxValue();' /></label>
+  </p>
+
+  <p>
+    <b>Шкала</b><br>
+    <button onClick='A.setPipsStyle(0);'>Нет</button>
+    <button onClick='A.setPipsStyle(1);'>Есть</button>
+  </p>
+
+  <p>
+    <b>Частота меток (количество шагов между двумя метками)</b><br>
+    <input type='text' onChange='A.setFrequency(this.value);' />
+  </p>
+
+  <p>
+    <b>Шаг</b><br>
+    <input type='text' onChange='A.setIncrement(this.value); this.value = A.getIncrement();' />
+  </p>
+
+</div>
+
+</body>
+</html>

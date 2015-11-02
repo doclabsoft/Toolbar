@@ -1,0 +1,109 @@
+.DD-hidden {
+  display: none!important;
+}
+
+.DD-toolbar .DD-group,
+.DD-control,
+.DD-toolbar .DD-group-expandable,
+.DD-group-flat,
+.DD-group-flat__content {
+  display: inline-block;
+  min-height: 1em;
+/*  padding: 0 0.25em;*/
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.DD-group-expandable__content {
+  white-space: normal;
+}
+
+.DD-group-flat__caption {
+  padding: 0 3px;
+}
+
+.DD-button,
+.DD-checkbox,
+.DD-radiobutton,
+.DD-dropdown,
+.DD-group-expandable__control {
+  cursor: pointer;
+}
+
+.DD-group__caption,
+.DD-control__caption {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+
+.DD-spinner__caption,
+.DD-textedit__caption {
+  margin-right: 0.3em;
+}
+
+.DD-spinner__control {
+  display: inline-block;
+  width: 3em;
+}
+.DD-spinner-btn-less, .DD-spinner-btn-more {
+  min-width: 1em;
+  min-height: 1em;
+}
+.DD-spinner-btn-less::after {
+  content: '<';
+}
+.DD-spinner-btn-more::after {
+  content: '>';
+}
+
+.DD-noUiSlider-h {
+  padding: 0 1em;
+}
+.DD-noUiSlider-h .DD-noUiSlider__caption {
+  margin-right: 1.5em;
+}
+.DD-noUiSlider-v {
+  padding: 1em 0;
+}
+.DD-noUiSlider-v .DD-noUiSlider__caption {
+  display: block;
+  margin-bottom: 1.5em;
+}
+.DD-noUiSlider-slider.noUi-horizontal {
+  display: inline-block;
+  min-width: 100px;
+  vertical-align: middle;
+}
+
+.DD-dropdown__popup {
+  box-sizing: border-box;
+  padding: 0.25em;
+  background: white;
+  z-index: 10;
+}
+
+
+.DD-toolbar {
+  display: block;
+}
+.DD-toolbar__content .DD-control {
+  text-align: center;
+}
+.DD-toolbar__content .DD-group__caption {
+  max-width: 12em;
+}
+.DD-toolbar__content .DD-button__caption,
+.DD-toolbar__content .DD-checkbox__caption,
+.DD-toolbar__content .DD-radiobutton__caption,
+.DD-toolbar__content .DD-dropdown__caption {
+  max-width: 20em;
+}
+.DD-toolbar__content .DD-textedit__caption,
+.DD-toolbar__content .DD-spinner__caption,
+.DD-toolbar__content .DD-noUiSlider__caption {
+  max-width: 40%;
+}

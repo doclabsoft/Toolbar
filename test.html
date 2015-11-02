@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Untitled#1</title>
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+</head>
+<body>
+	<div class="container" id="test">
+	</div>
+	<script type="text/javascript" src="../bower_components/closurelibrary/closure/goog/base.js"></script>
+	<script type="text/javascript" src="deps.js"></script>
+	<script src='../bower_components/hammerjs/hammer.js'></script>
+	<script type="text/javascript">
+
+		goog.require('DD.ui.controls.Toolbar');
+		window.onload = function()
+		{
+			var toolbar = new DD.ui.controls.Toolbar();
+			toolbar.render(document.getElementById('test'));
+		};
+	</script>
+</body>
+</html>
